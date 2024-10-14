@@ -7,4 +7,4 @@ router.get('/', workshopControllers.index);
 router.put('/:id', workshopControllers.update);
 router.delete('/:id', workshopControllers.destroy);
 
-export default router;
+export default router; 

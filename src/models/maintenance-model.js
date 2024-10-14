@@ -28,8 +28,7 @@ const maintenanceScema = new Schema({
         required: true
     },
     totalCost: {
-        type: Number,
-        required: true
+        type: Number
     }
 });
 
