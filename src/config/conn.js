@@ -4,8 +4,10 @@ const mongodb = process.env.MONGODB;
 
 async function main() {
     try {
-        await mongoose.connect(mongodb);
-        console.log("Mongo db connected");
+        await mongoose
+        .connect(mongodb)
+        .then(() => console.log("Mongo db connected"))
+        .catch((error) => console.error(error))
     } catch (error) {
         console.log(error.message);
     }
